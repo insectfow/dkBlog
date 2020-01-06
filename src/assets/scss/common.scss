@@ -1,0 +1,286 @@
+/* a 링크 초기화 */
+a,
+a:hover,
+a:active {
+  color: #000;
+  text-decoration: none !important;
+}
+
+/* claerfix <-- float 쓸때 부모에게 클래스 주면 부모 height영역 살아남 */
+.clearfix:before,
+.clearfix:after {
+  display: block;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix:before {
+  *zoom: 1;
+}
+
+/* 여백 초기화 */
+body,
+div,
+ul,
+li,
+dl,
+dd,
+dt,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+fieldset,
+legend,
+p,
+select,
+table,
+th,
+td,
+tr,
+textarea,
+button,
+form,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+  font-family: "NotoSansKR-Regular";
+}
+
+/* 폰트 초기화 */
+body,
+input,
+textarea,
+select,
+button,
+table,
+em,
+strong,
+span {
+  font-family: "NotoSansKR-Regular";
+  color: #707070;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* 폰트 스타일 초기화 */
+em,
+address {
+  font-style: normal;
+}
+
+/* 블릿기호 초기화 */
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+/* 제목 태그 초기화 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+/* 테두리 초기화 */
+img,
+fieldset {
+  border: 0 none;
+}
+
+/* 버튼 초기화 */
+button {
+  border: 0;
+  cursor: pointer;
+}
+input,
+select,
+button,
+option {
+  outline: none;
+  border: none;
+}
+
+/* 반응형 */
+video,
+img {
+  width: 100%;
+  vertical-align: unset;
+}
+
+/* clearfix */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: block;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+
+/* IR 효과 */
+.ir_pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
+.ir_wa {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
+.ir_su {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+} /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+
+/* margin, padding */
+.mt10 {
+  margin-top: 10px !important;
+}
+.mt15 {
+  margin-top: 15px !important;
+}
+.mt20 {
+  margin-top: 20px !important;
+}
+.mt25 {
+  margin-top: 25px !important;
+}
+.mt30 {
+  margin-top: 30px !important;
+}
+.mt35 {
+  margin-top: 35px !important;
+}
+.mt40 {
+  margin-top: 40px !important;
+}
+.mt45 {
+  margin-top: 45px !important;
+}
+.mt50 {
+  margin-top: 50px !important;
+}
+
+/* select css 초기화 */
+select {
+  -webkit-appearance: none; /* 화살표 숨기기 */
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* IE 10, 11 화살표 숨기기 */
+select::-ms-expand {
+  display: none;
+}
+
+.none {
+  display: none;
+}
+
+// scroll
+.scroll::-webkit-scrollbar {
+  width: 5px;
+  background: none;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background: #c5c5c5;
+  border-radius: 6px;
+  height: 40px;
+}
+.scroll::-webkit-scrollbar-track {
+  background: none;
+}
+
+// plus
+.plus {
+  position: relative;
+  padding-right: 22px;
+}
+.plus:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  width: 2px;
+  height: 12px;
+  background: #000;
+  transform: translateY(-50%);
+}
+.plus:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 12px;
+  height: 2px;
+  background: #000;
+  transform: translateY(-50%);
+}
+
+// eq
+.eq {
+  position: relative;
+  padding-right: 22px;
+}
+
+.eq:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 12px;
+  height: 2px;
+  background: #000;
+  transform: translateY(-50%);
+  margin-top: -2px;
+}
+.eq:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 12px;
+  height: 2px;
+  background: #000;
+  margin-top: 2px;
+  transform: translateY(-50%);
+}
+
+::placeholder {
+  color: #bbbbbb;
+  font-size: 13px;
+}
+
+input {
+  font-family: "Nanum-Barun-Gothic-normal";
+  color: #000;
+}
